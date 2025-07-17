@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Reservation</title>
 </head>
 
  <header class="text-gray-600 body-font border border-black rounded-3xl">
@@ -28,12 +29,12 @@
         class="md:ml-auto flex flex-wrap items-center text-base justify-center"
       >
         <a href="/index.html" class="mr-5 text-white hover:text-yellow-100">Home</a>
-        <a href="/asmara/menu.html" class="mr-5 text-white hover:text-yellow-100">Menu</a>
+        <a href="/asmaras/about.html" class="mr-5 text-white hover:text-yellow-100">About</a>
+        <a href="/asmara/menu.html" class="mr-5 text-white hover:text-yellow-100"
+          >Menu</a
+        >
         <a href="/testimonial.html" class="mr-5 text-white hover:text-yellow-100"
           >Testimonials</a
-        >
-        <a href="/asmararestuarant/reserve.html" class="mr-5 text-white hover:text-yellow-100"
-          >Reservation</a
         >
         <a href="/asmara/contacts.html" class="mr-5 text-white hover:text-yellow-100">Contact</a>
       </nav>
@@ -56,53 +57,105 @@
   </header>
 
 <body style="background-color: rgb(21, 57, 22)">
-    <h2 style="color: yellow; text-align: center; font-size: x-large; font-weight: 600;">“A Taste of Home, Far from Home.”</h2>
+  <h1 style="color: rgb(210, 210, 58); text-align: center; font-size: 50px; text-decoration: underline;">Reservation Details</h1> <br>
+  <form action="registration form"></form>
+
+  <form>
+    <style>
+      .row {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-bottom: 10px
+      }
+
+      .group {
+        display: flex;
+        flex-direction: column;
+        width: 180px
+      }
+
+      label {
+        color: rgb(255, 249, 196)
+      }
+
+      input,
+      select,
+      textarea {
+        height: 30px;
+        padding: 4px;
+        border: 1px solid white;
+        border-radius: 4px;
+        outline: none
     
-<section class="text-gray-600 body-font">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col">
-       
-    </div>
-    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-64 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full w-full" src="asmara.jpg">
-        </div>
-        <h2 class="text-xl font-medium title-font text-yellow-500 mt-5 flex item-center justify-center">Our Story</h2>
-        <p class="text-base leading-relaxed mt-2 text-yellow-100">Founded in 2015, our restaurant began as a humble dream to share the authentic tastes of Africa with our community. Inspired by recipes passed down through generations, we bring the warmth of family kitchens and the rich diversity of African flavors to your table.
-<br>
-From slow-cooked stews simmered with fragrant spices to vibrant grilled dishes, every meal tells a story of heritage, celebration, and home. What started as a small family eatery has grown into a beloved spot where tradition meets modern hospitality — always rooted in love, culture, and the spirit of Africa.</p>
-      
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-64 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full w-full" src="mission.jpg">
-        </div>
-        <h2 class="text-xl font-medium title-font text-yellow-500 mt-5 flex item-center justify-center">Mission</h2>
-        <p class="text-base leading-relaxed mt-2 text-yellow-100">Our mission is to bring the authentic taste of Africa to every table, celebrating the richness of our continent’s diverse culinary traditions. We’re dedicated to preserving family recipes and sharing the warm spirit of African hospitality with every guest who walks through our doors.
+      }
 
-By combining time-honored cooking methods with fresh, local ingredients, we craft dishes that honor our heritage and spark curiosity in every bite.
+      select {
+        height: 30px
+      }
 
-At the core of what we do is a love for storytelling through food — connecting cultures and building a community.</p>
+      textarea {
+        height: 80px
         
-      </div>
-      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
-        <div class="rounded-lg h-64 overflow-hidden">
-          <img alt="content" class="object-cover object-center h-full w-full" src="values.jpg">
-        </div>
-        <h2 class="text-xl font-medium title-font text-yellow-500 mt-5 flex item-center justify-center">Values</h2>
-        <p class="text-base leading-relaxed mt-2 text-yellow-100">We value authenticity and tradition — honoring family recipes, time-honored techniques, and the true essence of African cuisine. Each dish we serve carries the stories of our heritage, prepared with care and respect for where we come from.
+      }
 
-At the heart of everything we do is a belief in warmth, community, and genuine hospitality. We welcome every guest like family, celebrate the richness of our diverse culture, and strive to make each meal more than just food — but an experience that connects ,comforts and inspires.</p>
+      button {
+        background-color: rgb(255, 249, 196);
+        color: rgb(0, 0, 0);
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px
+      }
 
+      button:hover {
+        background-color: rgb(255, 235, 59)
+      }
+
+      input:hover{
+        background-color: rgb(255, 245, 157);
+      }
+      input{
+        padding: 25px;
+        width: 190px;
+        border-radius: 10px;
+      }
+    </style>
+
+    <div class="row">
+      <div class="group"><label>First Name</label><input type="text"></div>
+      <div class="group"><label>Last Name</label><input type="text"></div>
+    </div> <br>
+
+    <div class="row">
+      <div class="group"><label>Email</label><input type="email"></div>
+      <div class="group"><label>Date of Reservation</label><input type="date"></div>
+    </div> <br>
+
+    <div class="row">
+      <div class="group"><label>Time</label><input type="time"></div>
+      <div class="group"><label>Number of Guests</label>
+        <select>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5+</option>
+        </select>
+      </div> <br>
+    </div> <br>
+
+    <div class="row">
+      <div><label style="text-align: center;">Any additional special requests</label> <br><textarea
+          style="width: 400px; height: 100px;" placeholder="Describe any special decoration for your table"></textarea>
       </div>
+    </div> <br>
+
+    <div class="row">
+      <button type="submit">Submit Reservation</button>
     </div>
-  </div>
-</section>
-  
-</body>
+  </form>
 
-<br>
+</body> <br>
 <hr>
 
 <footer class="text-gray-600 body-font">
@@ -124,7 +177,7 @@ At the heart of everything we do is a belief in warmth, community, and genuine h
         <h2 class="title-font font-medium text-white tracking-widest text-sm mb-3">
           CATEGORIES
         </h2>
-        <n av class="list-none mb-10">
+        <nav class="list-none mb-10">
           <li>
             <a class="text-yellow-100 hover:text-white">live location link</a>
           </li>
